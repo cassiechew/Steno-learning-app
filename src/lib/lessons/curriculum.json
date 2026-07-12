@@ -1,0 +1,2308 @@
+{
+	"units": [
+		{
+			"title": "Getting started",
+			"lessons": [
+				{
+					"id": "layout",
+					"title": "Meet the keyboard",
+					"chapter": "Lapwing guide: steno basics",
+					"intro": [
+						"A steno keyboard has a LEFT bank (initial consonants), four VOWEL keys under your thumbs, an asterisk, and a RIGHT bank (final consonants).",
+						"Keys are always read in steno order: S T K P W H R — A O * E U — F R P B L G T S D Z.",
+						"This drill just asks you to press each key on its own. Watch the diagram: it shows exactly which key to hit."
+					],
+					"items": [
+						{
+							"text": "left S",
+							"outline": "S"
+						},
+						{
+							"text": "left T",
+							"outline": "T"
+						},
+						{
+							"text": "left K",
+							"outline": "K"
+						},
+						{
+							"text": "left P",
+							"outline": "P"
+						},
+						{
+							"text": "left W",
+							"outline": "W"
+						},
+						{
+							"text": "left H",
+							"outline": "H"
+						},
+						{
+							"text": "left R",
+							"outline": "R"
+						},
+						{
+							"text": "vowel A",
+							"outline": "A"
+						},
+						{
+							"text": "vowel O",
+							"outline": "O"
+						},
+						{
+							"text": "asterisk key",
+							"outline": "*"
+						},
+						{
+							"text": "vowel E",
+							"outline": "E"
+						},
+						{
+							"text": "vowel U",
+							"outline": "U"
+						},
+						{
+							"text": "right F",
+							"outline": "-F"
+						},
+						{
+							"text": "right R",
+							"outline": "-R"
+						},
+						{
+							"text": "right P",
+							"outline": "-P"
+						},
+						{
+							"text": "right B",
+							"outline": "-B"
+						},
+						{
+							"text": "right L",
+							"outline": "-L"
+						},
+						{
+							"text": "right G",
+							"outline": "-G"
+						},
+						{
+							"text": "right T",
+							"outline": "-T"
+						},
+						{
+							"text": "right S",
+							"outline": "-S"
+						},
+						{
+							"text": "right D",
+							"outline": "-D"
+						},
+						{
+							"text": "right Z",
+							"outline": "-Z"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "short-vowels",
+					"title": "First words: short vowels",
+					"chapter": "Lapwing guide: one-syllable words",
+					"intro": [
+						"Words are stroked phonetically: initial consonant + vowel + final consonant, all pressed together as one chord.",
+						"Short vowel sounds: A = \"a\" in cat, O = \"o\" in hot, E = \"e\" in pet, U = \"u\" in cut.",
+						"The short \"i\" of \"sit\" has no key of its own — it is the two-key chord EU, pressed with one thumb."
+					],
+					"items": [
+						{
+							"text": "to",
+							"outline": "TO"
+						},
+						{
+							"text": "was",
+							"outline": "WAS"
+						},
+						{
+							"text": "so",
+							"outline": "SO"
+						},
+						{
+							"text": "up",
+							"outline": "UP"
+						},
+						{
+							"text": "if",
+							"outline": "EUF"
+						},
+						{
+							"text": "at",
+							"outline": "AT"
+						},
+						{
+							"text": "well",
+							"outline": "WEL"
+						},
+						{
+							"text": "her",
+							"outline": "HER"
+						},
+						{
+							"text": "who",
+							"outline": "HO"
+						},
+						{
+							"text": "as",
+							"outline": "AS"
+						},
+						{
+							"text": "his",
+							"outline": "HEUS"
+						},
+						{
+							"text": "will",
+							"outline": "WEUL"
+						},
+						{
+							"text": "would",
+							"outline": "WUD"
+						},
+						{
+							"text": "tell",
+							"outline": "TEL"
+						},
+						{
+							"text": "us",
+							"outline": "US"
+						},
+						{
+							"text": "were",
+							"outline": "WER"
+						},
+						{
+							"text": "could",
+							"outline": "KUD"
+						},
+						{
+							"text": "has",
+							"outline": "HAS"
+						},
+						{
+							"text": "said",
+							"outline": "SED"
+						},
+						{
+							"text": "sir",
+							"outline": "SEUR"
+						},
+						{
+							"text": "help",
+							"outline": "HEP"
+						},
+						{
+							"text": "put",
+							"outline": "PUT"
+						},
+						{
+							"text": "uh",
+							"outline": "HU"
+						},
+						{
+							"text": "after",
+							"outline": "AF"
+						},
+						{
+							"text": "hi",
+							"outline": "HEU"
+						},
+						{
+							"text": "remember",
+							"outline": "RER"
+						},
+						{
+							"text": "car",
+							"outline": "KAR"
+						},
+						{
+							"text": "which",
+							"outline": "WEU"
+						},
+						{
+							"text": "hell",
+							"outline": "HEL"
+						},
+						{
+							"text": "kill",
+							"outline": "KEUL"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "long-vowels",
+					"title": "Long vowels & diphthongs",
+					"chapter": "Lapwing guide: vowel chords",
+					"intro": [
+						"Long vowels are two- and three-key thumb chords:",
+						"AEU = long a (late) · AOE = long e (heat) · AOEU = long i (site) · OE = long o (hope) · AOU = long u (cute) · AO = \"oo\" (soup)",
+						"Diphthongs: AU = \"aw\" (saw) · OU = \"ow\" (how) · OEU = \"oy\" (toy)"
+					],
+					"items": [
+						{
+							"text": "we",
+							"outline": "WAOE"
+						},
+						{
+							"text": "he",
+							"outline": "HAOE"
+						},
+						{
+							"text": "all",
+							"outline": "AUL"
+						},
+						{
+							"text": "here",
+							"outline": "HAOER"
+						},
+						{
+							"text": "right",
+							"outline": "RAOEUT"
+						},
+						{
+							"text": "out",
+							"outline": "AOUT"
+						},
+						{
+							"text": "how",
+							"outline": "HOU"
+						},
+						{
+							"text": "see",
+							"outline": "SAOE"
+						},
+						{
+							"text": "hey",
+							"outline": "HAEU"
+						},
+						{
+							"text": "or",
+							"outline": "AUR"
+						},
+						{
+							"text": "say",
+							"outline": "SAEU"
+						},
+						{
+							"text": "way",
+							"outline": "WAEU"
+						},
+						{
+							"text": "our",
+							"outline": "OUR"
+						},
+						{
+							"text": "too",
+							"outline": "TAO"
+						},
+						{
+							"text": "off",
+							"outline": "AUF"
+						},
+						{
+							"text": "sorry",
+							"outline": "SOER"
+						},
+						{
+							"text": "call",
+							"outline": "KAUL"
+						},
+						{
+							"text": "wait",
+							"outline": "WAEUT"
+						},
+						{
+							"text": "other",
+							"outline": "OER"
+						},
+						{
+							"text": "keep",
+							"outline": "KAOEP"
+						},
+						{
+							"text": "house",
+							"outline": "HOUS"
+						},
+						{
+							"text": "care",
+							"outline": "KAEUR"
+						},
+						{
+							"text": "saw",
+							"outline": "SAU"
+						},
+						{
+							"text": "without",
+							"outline": "WOUT"
+						},
+						{
+							"text": "wife",
+							"outline": "WAOEUF"
+						},
+						{
+							"text": "use",
+							"outline": "AOUS"
+						},
+						{
+							"text": "hope",
+							"outline": "HOEP"
+						},
+						{
+							"text": "open",
+							"outline": "OEP"
+						},
+						{
+							"text": "cause",
+							"outline": "KAUS"
+						},
+						{
+							"text": "worry",
+							"outline": "WOER"
+						},
+						{
+							"text": "case",
+							"outline": "KAEUS"
+						},
+						{
+							"text": "pay",
+							"outline": "PAEU"
+						}
+					],
+					"passAccuracy": 0.9
+				}
+			]
+		},
+		{
+			"title": "Consonant chords",
+			"lessons": [
+				{
+					"id": "left-hand-chords",
+					"title": "Left-hand consonant chords",
+					"chapter": "Lapwing guide: initial consonant chords",
+					"intro": [
+						"Missing initial consonants are chords on the left bank:",
+						"TK = d · PW = b · HR = l · TP = f · SR = v · TKPW = g · PH = m · TPH = n · KWR = y · SKWR = j · KW = qu",
+						"And the \"h-family\" digraphs: KH = ch · SH = sh · TH = th"
+					],
+					"items": [
+						{
+							"text": "that",
+							"outline": "THA"
+						},
+						{
+							"text": "me",
+							"outline": "PHAOE"
+						},
+						{
+							"text": "my",
+							"outline": "PHEU"
+						},
+						{
+							"text": "your",
+							"outline": "KWHUR"
+						},
+						{
+							"text": "do",
+							"outline": "TKO"
+						},
+						{
+							"text": "no",
+							"outline": "TPHO"
+						},
+						{
+							"text": "know",
+							"outline": "TPHOE"
+						},
+						{
+							"text": "not",
+							"outline": "TPHOT"
+						},
+						{
+							"text": "just",
+							"outline": "SKWRUFT"
+						},
+						{
+							"text": "get",
+							"outline": "TKPWET"
+						},
+						{
+							"text": "but",
+							"outline": "PWUT"
+						},
+						{
+							"text": "they",
+							"outline": "THE"
+						},
+						{
+							"text": "like",
+							"outline": "HRAOEUBG"
+						},
+						{
+							"text": "she",
+							"outline": "SHAOE"
+						},
+						{
+							"text": "got",
+							"outline": "TKPWOT"
+						},
+						{
+							"text": "now",
+							"outline": "TPHOU"
+						},
+						{
+							"text": "think",
+							"outline": "THEU"
+						},
+						{
+							"text": "good",
+							"outline": "TKPWAOD"
+						},
+						{
+							"text": "let",
+							"outline": "HRET"
+						},
+						{
+							"text": "back",
+							"outline": "PWABG"
+						},
+						{
+							"text": "yes",
+							"outline": "KWHES"
+						},
+						{
+							"text": "look",
+							"outline": "HRAOBG"
+						},
+						{
+							"text": "man",
+							"outline": "PHAPB"
+						},
+						{
+							"text": "them",
+							"outline": "THEPL"
+						},
+						{
+							"text": "down",
+							"outline": "TKOUPB"
+						},
+						{
+							"text": "then",
+							"outline": "THEPB"
+						},
+						{
+							"text": "little",
+							"outline": "HREUL"
+						},
+						{
+							"text": "make",
+							"outline": "PHAEUBG"
+						},
+						{
+							"text": "never",
+							"outline": "TPHEFR"
+						},
+						{
+							"text": "by",
+							"outline": "PWEU"
+						},
+						{
+							"text": "more",
+							"outline": "PHOR"
+						},
+						{
+							"text": "need",
+							"outline": "TPHAOED"
+						},
+						{
+							"text": "mean",
+							"outline": "PHAOEPB"
+						},
+						{
+							"text": "very",
+							"outline": "SRE"
+						},
+						{
+							"text": "give",
+							"outline": "TKPWEUF"
+						},
+						{
+							"text": "love",
+							"outline": "HROF"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "right-hand-chords",
+					"title": "Right-hand consonant chords",
+					"chapter": "Lapwing guide: final consonant chords",
+					"intro": [
+						"Missing final consonants are chords on the right bank:",
+						"-PB = n · -PL = m · -BG = k · -FP = ch · -RB = sh · -PBLG = j · -BGS = x · -PBG = ng · -GS = \"shun\"",
+						"These free up your left hand: now any consonant can start OR end a word."
+					],
+					"items": [
+						{
+							"text": "on",
+							"outline": "AUPB"
+						},
+						{
+							"text": "him",
+							"outline": "HEUPL"
+						},
+						{
+							"text": "come",
+							"outline": "KOPL"
+						},
+						{
+							"text": "one",
+							"outline": "WUPB"
+						},
+						{
+							"text": "want",
+							"outline": "WAUPBT"
+						},
+						{
+							"text": "time",
+							"outline": "TAOEUPL"
+						},
+						{
+							"text": "take",
+							"outline": "TAEUBG"
+						},
+						{
+							"text": "an",
+							"outline": "APB"
+						},
+						{
+							"text": "some",
+							"outline": "SOPL"
+						},
+						{
+							"text": "am",
+							"outline": "APL"
+						},
+						{
+							"text": "only",
+							"outline": "OEPBL"
+						},
+						{
+							"text": "much",
+							"outline": "PHUFP"
+						},
+						{
+							"text": "even",
+							"outline": "AOEFPB"
+						},
+						{
+							"text": "talk",
+							"outline": "TAUBG"
+						},
+						{
+							"text": "find",
+							"outline": "TPAOEUPBD"
+						},
+						{
+							"text": "work",
+							"outline": "WORBG"
+						},
+						{
+							"text": "again",
+							"outline": "TKPWEPB"
+						},
+						{
+							"text": "home",
+							"outline": "HOEPL"
+						},
+						{
+							"text": "won",
+							"outline": "WOPB"
+						},
+						{
+							"text": "than",
+							"outline": "THAPB"
+						},
+						{
+							"text": "around",
+							"outline": "ARPBD"
+						},
+						{
+							"text": "long",
+							"outline": "HROPBG"
+						},
+						{
+							"text": "name",
+							"outline": "TPHAEUPL"
+						},
+						{
+							"text": "money",
+							"outline": "PHUPB"
+						},
+						{
+							"text": "fine",
+							"outline": "TPAOEUPB"
+						},
+						{
+							"text": "kind",
+							"outline": "KEUPBD"
+						},
+						{
+							"text": "listen",
+							"outline": "HREUFPB"
+						},
+						{
+							"text": "wrong",
+							"outline": "WROPBG"
+						},
+						{
+							"text": "ok",
+							"outline": "OBG"
+						},
+						{
+							"text": "wanted",
+							"outline": "WAUPBTD"
+						},
+						{
+							"text": "done",
+							"outline": "TKOPB"
+						},
+						{
+							"text": "mind",
+							"outline": "PHAOEUPBD"
+						},
+						{
+							"text": "understand",
+							"outline": "UPBS"
+						},
+						{
+							"text": "came",
+							"outline": "KAEUPL"
+						},
+						{
+							"text": "own",
+							"outline": "OEPB"
+						},
+						{
+							"text": "someone",
+							"outline": "SWUPB"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "asterisk",
+					"title": "The asterisk & fingerspelling",
+					"chapter": "Lapwing guide: the asterisk key",
+					"intro": [
+						"The asterisk alone (*) undoes your last stroke — you will use it constantly.",
+						"* also modifies strokes: final *T = \"-th\" (bath = PWA*T), and it distinguishes words that would otherwise collide.",
+						"Fingerspelling writes single letters for names and odd words: the letter chord + *."
+					],
+					"items": [
+						{
+							"text": "undo (asterisk alone)",
+							"outline": "*"
+						},
+						{
+							"text": "oh",
+							"outline": "O*E"
+						},
+						{
+							"text": "yeah",
+							"outline": "KWH*E"
+						},
+						{
+							"text": "okay",
+							"outline": "O*BG"
+						},
+						{
+							"text": "gonna",
+							"outline": "TKPW*G"
+						},
+						{
+							"text": "thank",
+							"outline": "THA*PBG"
+						},
+						{
+							"text": "believe",
+							"outline": "PWHRAO*EF"
+						},
+						{
+							"text": "leave",
+							"outline": "HRAO*EF"
+						},
+						{
+							"text": "father",
+							"outline": "TPA*URT"
+						},
+						{
+							"text": "gotta",
+							"outline": "TKPW*T"
+						},
+						{
+							"text": "huh",
+							"outline": "H*U"
+						},
+						{
+							"text": "letter a",
+							"outline": "A*"
+						},
+						{
+							"text": "letter b",
+							"outline": "PW*"
+						},
+						{
+							"text": "letter c",
+							"outline": "KR*"
+						},
+						{
+							"text": "letter d",
+							"outline": "TK*"
+						},
+						{
+							"text": "letter e",
+							"outline": "SK*"
+						},
+						{
+							"text": "letter e",
+							"outline": "*E"
+						},
+						{
+							"text": "letter f",
+							"outline": "TP*"
+						},
+						{
+							"text": "letter g",
+							"outline": "TKPW*"
+						},
+						{
+							"text": "letter h",
+							"outline": "H*"
+						},
+						{
+							"text": "letter i",
+							"outline": "SKW*"
+						},
+						{
+							"text": "letter i",
+							"outline": "*EU"
+						},
+						{
+							"text": "letter j",
+							"outline": "SKWR*"
+						},
+						{
+							"text": "letter k",
+							"outline": "K*"
+						},
+						{
+							"text": "letter l",
+							"outline": "HR*"
+						},
+						{
+							"text": "letter m",
+							"outline": "PH*"
+						},
+						{
+							"text": "letter n",
+							"outline": "TPH*"
+						},
+						{
+							"text": "letter o",
+							"outline": "O*"
+						},
+						{
+							"text": "letter p",
+							"outline": "P*"
+						},
+						{
+							"text": "letter q",
+							"outline": "KW*"
+						},
+						{
+							"text": "letter r",
+							"outline": "R*"
+						},
+						{
+							"text": "letter s",
+							"outline": "S*"
+						},
+						{
+							"text": "letter t",
+							"outline": "T*"
+						},
+						{
+							"text": "letter u",
+							"outline": "WR*"
+						},
+						{
+							"text": "letter u",
+							"outline": "*U"
+						},
+						{
+							"text": "letter v",
+							"outline": "SR*"
+						},
+						{
+							"text": "letter w",
+							"outline": "W*"
+						},
+						{
+							"text": "letter x",
+							"outline": "KP*"
+						},
+						{
+							"text": "letter y",
+							"outline": "KWH*"
+						},
+						{
+							"text": "letter z",
+							"outline": "STKPW*"
+						},
+						{
+							"text": "letter z",
+							"outline": "STK*"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "suffix-keys",
+					"title": "Suffix keys: -G, -S, -D, -Z",
+					"chapter": "Lapwing guide: suffix keys",
+					"intro": [
+						"The last four right-bank keys double as one-key suffixes added to the same stroke:",
+						"-G = \"-ing\" · -S = plural/possessive \"s\" · -D = past tense \"-ed\" · -Z = \"s\" when -S is unreachable",
+						"Steno order still applies: -S sits before -D, so a plural added to a word ending in D must use -Z instead (\"pads\" = PADZ, never PADS)."
+					],
+					"items": [
+						{
+							"text": "going",
+							"outline": "TKPW-G"
+						},
+						{
+							"text": "things",
+							"outline": "THEUPBGZ"
+						},
+						{
+							"text": "guys",
+							"outline": "TKPWAOEUZ"
+						},
+						{
+							"text": "thanks",
+							"outline": "THA*PBGZ"
+						},
+						{
+							"text": "years",
+							"outline": "KWHAOERZ"
+						},
+						{
+							"text": "coming",
+							"outline": "KOPLG"
+						},
+						{
+							"text": "happened",
+							"outline": "HAPD"
+						},
+						{
+							"text": "being",
+							"outline": "-BG"
+						},
+						{
+							"text": "morning",
+							"outline": "PHORPBG"
+						},
+						{
+							"text": "called",
+							"outline": "KAULD"
+						},
+						{
+							"text": "looks",
+							"outline": "HRAOBGZ"
+						},
+						{
+							"text": "hard",
+							"outline": "HARD"
+						},
+						{
+							"text": "wants",
+							"outline": "WAUPBTS"
+						},
+						{
+							"text": "friends",
+							"outline": "TPREPBDZ"
+						},
+						{
+							"text": "kids",
+							"outline": "KEUDZ"
+						},
+						{
+							"text": "saying",
+							"outline": "SAEUG"
+						},
+						{
+							"text": "killed",
+							"outline": "KEULD"
+						},
+						{
+							"text": "having",
+							"outline": "SR-G"
+						},
+						{
+							"text": "thinking",
+							"outline": "THEUG"
+						},
+						{
+							"text": "minutes",
+							"outline": "PH*EUPBTS"
+						},
+						{
+							"text": "knows",
+							"outline": "TPHOEZ"
+						},
+						{
+							"text": "makes",
+							"outline": "PHAEUBGZ"
+						},
+						{
+							"text": "hands",
+							"outline": "HAPBDZ"
+						},
+						{
+							"text": "comes",
+							"outline": "KOPLZ"
+						},
+						{
+							"text": "stand",
+							"outline": "STAPBD"
+						},
+						{
+							"text": "boys",
+							"outline": "PWOEUZ"
+						},
+						{
+							"text": "gets",
+							"outline": "TKPWETS"
+						},
+						{
+							"text": "times",
+							"outline": "TAOEUPLZ"
+						},
+						{
+							"text": "means",
+							"outline": "PHAOEPBZ"
+						},
+						{
+							"text": "asked",
+							"outline": "SK-D"
+						}
+					],
+					"passAccuracy": 0.9
+				}
+			]
+		},
+		{
+			"title": "Multisyllable words",
+			"lessons": [
+				{
+					"id": "splitting",
+					"title": "Two-stroke words: syllabic splitting",
+					"chapter": "Lapwing guide: writing multisyllable words",
+					"intro": [
+						"Longer words are written as one stroke per syllable, in sequence.",
+						"Split after the vowel and give the consonant to the next stroke when it starts that syllable.",
+						"Mis-stroke a syllable? Hit * to back up one stroke and redo it."
+					],
+					"items": [
+						{
+							"text": "away",
+							"outline": "A/WAEU"
+						},
+						{
+							"text": "baby",
+							"outline": "PWAEU/PWEU"
+						},
+						{
+							"text": "today",
+							"outline": "TO/TKA*EU"
+						},
+						{
+							"text": "matter",
+							"outline": "PHA/TER"
+						},
+						{
+							"text": "many",
+							"outline": "PHA/TPHEU"
+						},
+						{
+							"text": "family",
+							"outline": "TPAPL/HREU"
+						},
+						{
+							"text": "happy",
+							"outline": "HA/PEU"
+						},
+						{
+							"text": "alone",
+							"outline": "A/HROEPB"
+						},
+						{
+							"text": "afraid",
+							"outline": "A/TPRAEUD"
+						},
+						{
+							"text": "party",
+							"outline": "PAR/TEU"
+						},
+						{
+							"text": "ahead",
+							"outline": "A/HED"
+						},
+						{
+							"text": "alive",
+							"outline": "A/HRAOEUF"
+						},
+						{
+							"text": "parents",
+							"outline": "PA/REPBTS"
+						},
+						{
+							"text": "uncle",
+							"outline": "UPB/K-L"
+						},
+						{
+							"text": "christmas",
+							"outline": "KREUS/PHAS"
+						},
+						{
+							"text": "mama",
+							"outline": "PHA/PHA"
+						},
+						{
+							"text": "officer",
+							"outline": "OFS/*ER"
+						},
+						{
+							"text": "attention",
+							"outline": "A/TEPBGS"
+						},
+						{
+							"text": "relax",
+							"outline": "RE/HRABGS"
+						},
+						{
+							"text": "evidence",
+							"outline": "EF/TKEPBS"
+						},
+						{
+							"text": "finished",
+							"outline": "TPEU/TPHEURBD"
+						},
+						{
+							"text": "enjoy",
+							"outline": "EPB/SKWROEU"
+						},
+						{
+							"text": "amazing",
+							"outline": "A/PHAEUFG"
+						},
+						{
+							"text": "attack",
+							"outline": "A/TABG"
+						},
+						{
+							"text": "upstairs",
+							"outline": "UP/STA*EURZ"
+						},
+						{
+							"text": "sweetheart",
+							"outline": "SWAOET/HA*RT"
+						},
+						{
+							"text": "beginning",
+							"outline": "PWE/TKPWEUPBG"
+						},
+						{
+							"text": "outta",
+							"outline": "OU/TA"
+						},
+						{
+							"text": "promised",
+							"outline": "PROPLS/-D"
+						},
+						{
+							"text": "bathroom",
+							"outline": "PWA*T/RAO*PL"
+						},
+						{
+							"text": "arrest",
+							"outline": "A/REFT"
+						},
+						{
+							"text": "admit",
+							"outline": "AD/PHEUT"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "kwr-linker",
+					"title": "Vowel-first syllables: the KWR linker",
+					"chapter": "Lapwing guide: KWR as a syllable linker",
+					"intro": [
+						"A non-initial syllable that starts with a vowel gets KWR in front of it, so the stroke still begins with keys on the left bank.",
+						"Example: \"happen\" = HAP/KWREPB — the second syllable \"-en\" is stroked KWREPB."
+					],
+					"items": [
+						{
+							"text": "crazy",
+							"outline": "KRAEUZ/KWREU"
+						},
+						{
+							"text": "daddy",
+							"outline": "TKAD/KWREU"
+						},
+						{
+							"text": "hurry",
+							"outline": "HUR/KWREU"
+						},
+						{
+							"text": "marry",
+							"outline": "PHAEUR/KWREU"
+						},
+						{
+							"text": "buddy",
+							"outline": "PWUD/KWREU"
+						},
+						{
+							"text": "army",
+							"outline": "ARPL/KWREU"
+						},
+						{
+							"text": "realize",
+							"outline": "RAOEL/KWRAOEUZ"
+						},
+						{
+							"text": "sheriff",
+							"outline": "SHER/KWREUF"
+						},
+						{
+							"text": "sweetie",
+							"outline": "SWAOET/KWRAOE"
+						},
+						{
+							"text": "biggest",
+							"outline": "PWEUG/KWREFT"
+						},
+						{
+							"text": "realized",
+							"outline": "RAOEL/KWRAOEUDZ"
+						},
+						{
+							"text": "junior",
+							"outline": "SKWRAOUPB/KWROR"
+						},
+						{
+							"text": "annie",
+							"outline": "APB/KWRAOE"
+						},
+						{
+							"text": "babies",
+							"outline": "PWAEUB/KWREUS"
+						},
+						{
+							"text": "carrying",
+							"outline": "KAEUR/KWREUG"
+						},
+						{
+							"text": "maggie",
+							"outline": "PHAG/KWRAOE"
+						},
+						{
+							"text": "senior",
+							"outline": "SAOEPB/KWROR"
+						},
+						{
+							"text": "studio",
+							"outline": "STAOUD/KWROE"
+						},
+						{
+							"text": "golden",
+							"outline": "TKPWOELD/KWREPB"
+						},
+						{
+							"text": "daniel",
+							"outline": "TKAPB/KWREL"
+						},
+						{
+							"text": "union",
+							"outline": "AOUPB/KWROPB"
+						},
+						{
+							"text": "hidden",
+							"outline": "HEUD/KWREPB"
+						},
+						{
+							"text": "champion",
+							"outline": "KHA*PL/KWROPB"
+						},
+						{
+							"text": "carried",
+							"outline": "KAEUR/KWREUD"
+						},
+						{
+							"text": "latest",
+							"outline": "HRAEUT/KWREFT"
+						},
+						{
+							"text": "anniversary",
+							"outline": "A/TPHEU/SRERS/KWRAEUR/KWREU"
+						},
+						{
+							"text": "eaten",
+							"outline": "AOET/KWREPB"
+						},
+						{
+							"text": "foolish",
+							"outline": "TPAOL/KWREURB"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "three-strokes",
+					"title": "Longer words",
+					"chapter": "Lapwing guide: writing multisyllable words",
+					"intro": [
+						"Same rules, more syllables. Keep your rhythm steady: it is one clean stroke per syllable, not a race.",
+						"Remember * backs up one stroke at a time."
+					],
+					"items": [
+						{
+							"text": "attractive",
+							"outline": "A/TRABG/TEUF"
+						},
+						{
+							"text": "custody",
+							"outline": "KUS/TO/TKEU"
+						},
+						{
+							"text": "ordinary",
+							"outline": "ORD/TPHAEUR/KWREU"
+						},
+						{
+							"text": "surveillance",
+							"outline": "SUR/SRAEU/HRAPBS"
+						},
+						{
+							"text": "unhappy",
+							"outline": "UPB/HAP/KWREU"
+						},
+						{
+							"text": "honeymoon",
+							"outline": "HO/TPHEU/PHAO*PB"
+						},
+						{
+							"text": "helicopter",
+							"outline": "HEL/KOP/TER"
+						},
+						{
+							"text": "invitation",
+							"outline": "EUPB/SREU/TAEUGS"
+						},
+						{
+							"text": "ambassador",
+							"outline": "APL/PWAS/TKOR"
+						},
+						{
+							"text": "abandoned",
+							"outline": "A/PWAPB/TKOPBD"
+						},
+						{
+							"text": "engagement",
+							"outline": "EPB/TKPWAEUPBLG/-PLT"
+						},
+						{
+							"text": "temporary",
+							"outline": "T*EPL/RAEUR/KWREU"
+						},
+						{
+							"text": "rehearsal",
+							"outline": "RE/HER/SAL"
+						},
+						{
+							"text": "analysis",
+							"outline": "A/TPHAL/SEUS"
+						},
+						{
+							"text": "computers",
+							"outline": "KOPL/PAOU/TERZ"
+						},
+						{
+							"text": "salary",
+							"outline": "SA/HRAR/KWREU"
+						},
+						{
+							"text": "banana",
+							"outline": "PWA/TPHA/TPHA"
+						},
+						{
+							"text": "conspiracy",
+							"outline": "KOPB/SPEUR/SEU"
+						},
+						{
+							"text": "atlantic",
+							"outline": "AT/HRAPB/TEUBG"
+						},
+						{
+							"text": "autopsy",
+							"outline": "AU/TOP/SEU"
+						},
+						{
+							"text": "relations",
+							"outline": "RE/HRAEUGS/-S"
+						},
+						{
+							"text": "contrary",
+							"outline": "KOPB/TRAEUR/KWREU"
+						},
+						{
+							"text": "reunion",
+							"outline": "RE/AOUPB/KWROPB"
+						},
+						{
+							"text": "apologies",
+							"outline": "A/POL/SKWREUZ"
+						},
+						{
+							"text": "almighty",
+							"outline": "AL/PHAOEUT/KWREU"
+						},
+						{
+							"text": "primary",
+							"outline": "PRAOEU/PHAEUR/KWREU"
+						}
+					],
+					"passAccuracy": 0.9
+				}
+			]
+		},
+		{
+			"title": "Affixes & compounds",
+			"lessons": [
+				{
+					"id": "prefixes",
+					"title": "Prefix strokes",
+					"chapter": "Lapwing guide: prefixes and suffixes",
+					"intro": [
+						"Common prefixes get dedicated strokes that attach to the next word chunk, e.g. con-, com-, dis-, ex-, in-.",
+						"Write the prefix stroke, then the rest of the word syllabically."
+					],
+					"items": [
+						{
+							"text": "impossible",
+							"outline": "EUPL/POB",
+							"note": "prefix stroke: EUPL = im-"
+						},
+						{
+							"text": "address",
+							"outline": "A/TKRES",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "asleep",
+							"outline": "A/SHRAOEP",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "enemy",
+							"outline": "EPB/PHEU",
+							"note": "prefix stroke: EPB = en-"
+						},
+						{
+							"text": "apart",
+							"outline": "A/PART",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "invited",
+							"outline": "EUPB/SRAOEUTD",
+							"note": "prefix stroke: EUPB = in-"
+						},
+						{
+							"text": "arrived",
+							"outline": "A/RAOEUFD",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "incredible",
+							"outline": "EUPB/KREBL",
+							"note": "prefix stroke: EUPB = in-"
+						},
+						{
+							"text": "emily",
+							"outline": "EPL/HREU",
+							"note": "prefix stroke: EPL = em-"
+						},
+						{
+							"text": "release",
+							"outline": "RE/HRAOES",
+							"note": "prefix stroke: RE = re-"
+						},
+						{
+							"text": "agreed",
+							"outline": "A/TKPWRAOED",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "prepared",
+							"outline": "PRE/PAEURD",
+							"note": "prefix stroke: PRE = pre-"
+						},
+						{
+							"text": "aware",
+							"outline": "A/WAEUR",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "arrested",
+							"outline": "A/REFTD",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "prepare",
+							"outline": "PRE/PAEUR",
+							"note": "prefix stroke: PRE = pre-"
+						},
+						{
+							"text": "remain",
+							"outline": "RE/PHAEUPB",
+							"note": "prefix stroke: RE = re-"
+						},
+						{
+							"text": "alarm",
+							"outline": "A/HRARPL",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "invite",
+							"outline": "EUPB/SRAOEUT",
+							"note": "prefix stroke: EUPB = in-"
+						},
+						{
+							"text": "interview",
+							"outline": "EURPBT/SRAOU",
+							"note": "prefix stroke: EURPBT = inter-"
+						},
+						{
+							"text": "affair",
+							"outline": "A/TPAEUR",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "unbelievable",
+							"outline": "UPB/PWHRAOEBL",
+							"note": "prefix stroke: UPB = un-"
+						},
+						{
+							"text": "midnight",
+							"outline": "PHEUD/TPHAOEUT",
+							"note": "prefix stroke: PHEUD = mid-"
+						},
+						{
+							"text": "subtitles",
+							"outline": "SUB/TAOEULTS",
+							"note": "prefix stroke: SUB = sub-"
+						},
+						{
+							"text": "ashamed",
+							"outline": "A/SHAEUPLD",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "aboard",
+							"outline": "A/PWAORD",
+							"note": "prefix stroke: A = a-"
+						},
+						{
+							"text": "engaged",
+							"outline": "EPB/TKPWAEUPBLGD",
+							"note": "prefix stroke: EPB = en-"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "suffix-strokes",
+					"title": "Suffix strokes",
+					"chapter": "Lapwing guide: prefixes and suffixes",
+					"intro": [
+						"Common suffixes also get dedicated strokes, e.g. -ly, -ment, -ness, -ful, -tion variants.",
+						"Write the word, then the suffix stroke."
+					],
+					"items": [
+						{
+							"text": "mommy",
+							"outline": "PHOPL/KWREU",
+							"note": "suffix stroke: KWREU = -y"
+						},
+						{
+							"text": "carry",
+							"outline": "KAEUR/KWREU",
+							"note": "suffix stroke: KWREU = -y"
+						},
+						{
+							"text": "jerry",
+							"outline": "SKWRER/KWREU",
+							"note": "suffix stroke: KWREU = -y"
+						},
+						{
+							"text": "angry",
+							"outline": "APBG/REU",
+							"note": "suffix stroke: REU = -ry"
+						},
+						{
+							"text": "silly",
+							"outline": "SEU/HREU",
+							"note": "suffix stroke: HREU = -ly"
+						},
+						{
+							"text": "medical",
+							"outline": "PHED/KAL",
+							"note": "suffix stroke: KAL = -cal"
+						},
+						{
+							"text": "hanging",
+							"outline": "HAPBG/-G",
+							"note": "suffix stroke: -G = -ing"
+						},
+						{
+							"text": "drinking",
+							"outline": "TKR*EUPBG/-G",
+							"note": "suffix stroke: -G = -ing"
+						},
+						{
+							"text": "bringing",
+							"outline": "PWREUPBG/-G",
+							"note": "suffix stroke: -G = -ing"
+						},
+						{
+							"text": "singing",
+							"outline": "SEUPBG/-G",
+							"note": "suffix stroke: -G = -ing"
+						},
+						{
+							"text": "merry",
+							"outline": "PHER/KWREU",
+							"note": "suffix stroke: KWREU = -y"
+						},
+						{
+							"text": "murdered",
+							"outline": "PHURD/-D",
+							"note": "suffix stroke: -D = -ed"
+						},
+						{
+							"text": "bloody",
+							"outline": "PWHRAOD/KWREU",
+							"note": "suffix stroke: KWREU = -y"
+						},
+						{
+							"text": "ordered",
+							"outline": "ORD/-D",
+							"note": "suffix stroke: -D = -ed"
+						},
+						{
+							"text": "bedroom",
+							"outline": "PWED/RAO*PL",
+							"note": "suffix stroke: RAO*PL = -room"
+						},
+						{
+							"text": "expecting",
+							"outline": "KPEBGT/-G",
+							"note": "suffix stroke: -G = -ing"
+						},
+						{
+							"text": "fancy",
+							"outline": "TPAPB/SEU",
+							"note": "suffix stroke: SEU = -cy"
+						},
+						{
+							"text": "secretary",
+							"outline": "SE/KRE/TAEUR/KWREU",
+							"note": "suffix stroke: KWREU = -y"
+						},
+						{
+							"text": "handsome",
+							"outline": "HAPBD/SO*PL",
+							"note": "suffix stroke: SO*PL = -some"
+						},
+						{
+							"text": "picking",
+							"outline": "PEUBG/-G",
+							"note": "suffix stroke: -G = -ing"
+						},
+						{
+							"text": "goodness",
+							"outline": "TKPWAOD/-PBS",
+							"note": "suffix stroke: -PBS = -ness"
+						},
+						{
+							"text": "fixed",
+							"outline": "TPEUBGS/-D",
+							"note": "suffix stroke: -D = -ed"
+						},
+						{
+							"text": "mentioned",
+							"outline": "PHEPBGS/-D",
+							"note": "suffix stroke: -D = -ed"
+						},
+						{
+							"text": "harder",
+							"outline": "HARD/*ER",
+							"note": "suffix stroke: *ER = -er"
+						},
+						{
+							"text": "parking",
+							"outline": "PARBG/-G",
+							"note": "suffix stroke: -G = -ing"
+						},
+						{
+							"text": "grateful",
+							"outline": "TKPWRAEUT/-FL",
+							"note": "suffix stroke: -FL = -ful"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "compounds",
+					"title": "Compound words",
+					"chapter": "Lapwing guide: compound words",
+					"intro": [
+						"Compound words are usually just both halves written back to back.",
+						"If you know the two words, you already know the compound."
+					],
+					"items": [
+						{
+							"text": "person",
+							"outline": "PER/SOPB",
+							"note": "per + son"
+						},
+						{
+							"text": "thousand",
+							"outline": "THOU/SAPBD",
+							"note": "thou + sand"
+						},
+						{
+							"text": "monkey",
+							"outline": "PHOPB/KEU",
+							"note": "mon + key"
+						},
+						{
+							"text": "permission",
+							"outline": "PER/PHEUGS",
+							"note": "per + mission"
+						},
+						{
+							"text": "grandfather",
+							"outline": "TKPWRAPBD/TPA*URT",
+							"note": "grand + father"
+						},
+						{
+							"text": "perform",
+							"outline": "PER/TPORPL",
+							"note": "per + form"
+						},
+						{
+							"text": "anyhow",
+							"outline": "TPHEU/HOU",
+							"note": "any + how"
+						},
+						{
+							"text": "carpet",
+							"outline": "KAR/PET",
+							"note": "car + pet"
+						},
+						{
+							"text": "throughout",
+							"outline": "THRU/O*UT",
+							"note": "through + out"
+						},
+						{
+							"text": "shotgun",
+							"outline": "SHOT/TKPW*UPB",
+							"note": "shot + gun"
+						},
+						{
+							"text": "persons",
+							"outline": "PER/SOPB/-Z",
+							"note": "per + sons"
+						},
+						{
+							"text": "jackass",
+							"outline": "SKWRABG/A*S",
+							"note": "jack + ass"
+						},
+						{
+							"text": "godfather",
+							"outline": "TKPWOD/TPA*URT",
+							"note": "god + father"
+						},
+						{
+							"text": "lookout",
+							"outline": "HRAOBG/O*UT",
+							"note": "look + out"
+						},
+						{
+							"text": "blackout",
+							"outline": "PWHRABG/O*UT",
+							"note": "black + out"
+						},
+						{
+							"text": "northwest",
+							"outline": "TPHO*RT/WEFT",
+							"note": "north + west"
+						},
+						{
+							"text": "hangover",
+							"outline": "HAPBG/O*EFR",
+							"note": "hang + over"
+						},
+						{
+							"text": "layout",
+							"outline": "HRAEU/O*UT",
+							"note": "lay + out"
+						},
+						{
+							"text": "knockout",
+							"outline": "TPHOBG/O*UT",
+							"note": "knock + out"
+						},
+						{
+							"text": "northeast",
+							"outline": "TPHO*RT/AOEFT",
+							"note": "north + east"
+						},
+						{
+							"text": "radioactive",
+							"outline": "RAEU/TKEU/KWROE/TAEF",
+							"note": "radio + active"
+						},
+						{
+							"text": "cellphone",
+							"outline": "KREL/TPO*EPB",
+							"note": "cell + phone"
+						},
+						{
+							"text": "stepfather",
+							"outline": "STEP/TPA*URT",
+							"note": "step + father"
+						},
+						{
+							"text": "bandage",
+							"outline": "PWAPBD/AEUPBLG",
+							"note": "band + age"
+						}
+					],
+					"passAccuracy": 0.9
+				}
+			]
+		},
+		{
+			"title": "Real-world writing",
+			"lessons": [
+				{
+					"id": "briefs-1",
+					"title": "Starter briefs",
+					"chapter": "Lapwing guide: common briefs",
+					"intro": [
+						"Briefs are memorized shortcuts for the most frequent words — they ignore phonetics to save strokes.",
+						"These briefs cover a huge share of everyday English. Drill them until they are reflex."
+					],
+					"items": [
+						{
+							"text": "the",
+							"outline": "-T"
+						},
+						{
+							"text": "of",
+							"outline": "-F"
+						},
+						{
+							"text": "and",
+							"outline": "SKP"
+						},
+						{
+							"text": "I",
+							"outline": "EU"
+						},
+						{
+							"text": "you",
+							"outline": "U"
+						},
+						{
+							"text": "it",
+							"outline": "T"
+						},
+						{
+							"text": "is",
+							"outline": "S"
+						},
+						{
+							"text": "are",
+							"outline": "R"
+						},
+						{
+							"text": "with",
+							"outline": "W"
+						},
+						{
+							"text": "can",
+							"outline": "K"
+						},
+						{
+							"text": "will",
+							"outline": "HR"
+						},
+						{
+							"text": "have",
+							"outline": "SR"
+						},
+						{
+							"text": "be",
+							"outline": "-B"
+						},
+						{
+							"text": "this",
+							"outline": "TH"
+						},
+						{
+							"text": "that",
+							"outline": "THA"
+						},
+						{
+							"text": "was",
+							"outline": "WAS"
+						},
+						{
+							"text": "for",
+							"outline": "TP-R"
+						},
+						{
+							"text": "on",
+							"outline": "AUPB"
+						},
+						{
+							"text": "at",
+							"outline": "AT"
+						},
+						{
+							"text": "we",
+							"outline": "WAOE"
+						},
+						{
+							"text": "he",
+							"outline": "HAOE"
+						},
+						{
+							"text": "she",
+							"outline": "SHAOE"
+						},
+						{
+							"text": "they",
+							"outline": "THE"
+						},
+						{
+							"text": "do",
+							"outline": "TKO"
+						},
+						{
+							"text": "go",
+							"outline": "TKPW"
+						},
+						{
+							"text": "so",
+							"outline": "SO"
+						},
+						{
+							"text": "not",
+							"outline": "TPHOT"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "briefs-2",
+					"title": "More briefs",
+					"chapter": "Lapwing guide: common briefs",
+					"intro": [
+						"A second round: the most frequent words whose Lapwing outline is a shortcut rather than a straight phonetic spelling."
+					],
+					"items": [
+						{
+							"text": "in",
+							"outline": "TPH"
+						},
+						{
+							"text": "there",
+							"outline": "THR"
+						},
+						{
+							"text": "about",
+							"outline": "PW"
+						},
+						{
+							"text": "did",
+							"outline": "TK"
+						},
+						{
+							"text": "why",
+							"outline": "KWH"
+						},
+						{
+							"text": "from",
+							"outline": "TPR"
+						},
+						{
+							"text": "when",
+							"outline": "WH"
+						},
+						{
+							"text": "where",
+							"outline": "W-R"
+						},
+						{
+							"text": "been",
+							"outline": "PW-PB"
+						},
+						{
+							"text": "had",
+							"outline": "H"
+						},
+						{
+							"text": "something",
+							"outline": "S-G"
+						},
+						{
+							"text": "really",
+							"outline": "R-L"
+						},
+						{
+							"text": "over",
+							"outline": "AUFR"
+						},
+						{
+							"text": "people",
+							"outline": "P"
+						},
+						{
+							"text": "any",
+							"outline": "TPHEU"
+						},
+						{
+							"text": "maybe",
+							"outline": "PHAEUB"
+						},
+						{
+							"text": "anything",
+							"outline": "TPHEUG"
+						},
+						{
+							"text": "nothing",
+							"outline": "TPHOG"
+						},
+						{
+							"text": "into",
+							"outline": "TPHAO"
+						},
+						{
+							"text": "before",
+							"outline": "PW-FR"
+						},
+						{
+							"text": "better",
+							"outline": "PWERT"
+						},
+						{
+							"text": "ever",
+							"outline": "-FR"
+						},
+						{
+							"text": "always",
+							"outline": "AULS"
+						},
+						{
+							"text": "everything",
+							"outline": "EFRG"
+						},
+						{
+							"text": "old",
+							"outline": "OELD"
+						},
+						{
+							"text": "hello",
+							"outline": "H-L"
+						},
+						{
+							"text": "every",
+							"outline": "EFR"
+						},
+						{
+							"text": "another",
+							"outline": "TPHOER"
+						},
+						{
+							"text": "wanna",
+							"outline": "-P"
+						},
+						{
+							"text": "enough",
+							"outline": "TPHUF"
+						},
+						{
+							"text": "talking",
+							"outline": "TAUG"
+						},
+						{
+							"text": "ask",
+							"outline": "SK"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "star-conflicts",
+					"title": "Homophones & the asterisk",
+					"chapter": "Lapwing guide: conflict resolution",
+					"intro": [
+						"When two words would share a stroke, the less common one takes an asterisk.",
+						"These pairs differ ONLY by the * key — read the prompt carefully before stroking."
+					],
+					"items": [
+						{
+							"text": "going",
+							"outline": "TKPW-G",
+							"note": "vs. \"gonna\" = TKPW*G"
+						},
+						{
+							"text": "gonna",
+							"outline": "TKPW*G",
+							"note": "vs. \"going\" = TKPW-G"
+						},
+						{
+							"text": "thing",
+							"outline": "THEUPBG",
+							"note": "vs. \"think\" = TH*EUPBG"
+						},
+						{
+							"text": "think",
+							"outline": "TH*EUPBG",
+							"note": "vs. \"thing\" = THEUPBG"
+						},
+						{
+							"text": "ok",
+							"outline": "OBG",
+							"note": "vs. \"okay\" = O*BG"
+						},
+						{
+							"text": "okay",
+							"outline": "O*BG",
+							"note": "vs. \"ok\" = OBG"
+						},
+						{
+							"text": "uh",
+							"outline": "HU",
+							"note": "vs. \"huh\" = H*U"
+						},
+						{
+							"text": "huh",
+							"outline": "H*U",
+							"note": "vs. \"uh\" = HU"
+						},
+						{
+							"text": "life",
+							"outline": "HRAOEUF",
+							"note": "vs. \"live\" = HRAO*EUF"
+						},
+						{
+							"text": "live",
+							"outline": "HRAO*EUF",
+							"note": "vs. \"life\" = HRAOEUF"
+						},
+						{
+							"text": "as",
+							"outline": "AS",
+							"note": "vs. \"ass\" = A*S"
+						},
+						{
+							"text": "ass",
+							"outline": "A*S",
+							"note": "vs. \"as\" = AS"
+						},
+						{
+							"text": "dog",
+							"outline": "TKOG",
+							"note": "vs. \"doing\" = TKO*G"
+						},
+						{
+							"text": "doing",
+							"outline": "TKO*G",
+							"note": "vs. \"dog\" = TKOG"
+						},
+						{
+							"text": "by",
+							"outline": "PWEU",
+							"note": "vs. \"bye\" = PW*EU"
+						},
+						{
+							"text": "bye",
+							"outline": "PW*EU",
+							"note": "vs. \"by\" = PWEU"
+						},
+						{
+							"text": "yours",
+							"outline": "KWHURS",
+							"note": "vs. \"yourself\" = KWH*URS"
+						},
+						{
+							"text": "yourself",
+							"outline": "KWH*URS",
+							"note": "vs. \"yours\" = KWHURS"
+						},
+						{
+							"text": "owe",
+							"outline": "OE",
+							"note": "vs. \"oh\" = O*E"
+						},
+						{
+							"text": "oh",
+							"outline": "O*E",
+							"note": "vs. \"owe\" = OE"
+						},
+						{
+							"text": "forget",
+							"outline": "TPORGT",
+							"note": "vs. \"forgot\" = TPO*RGT"
+						},
+						{
+							"text": "forgot",
+							"outline": "TPO*RGT",
+							"note": "vs. \"forget\" = TPORGT"
+						},
+						{
+							"text": "boat",
+							"outline": "PWOET",
+							"note": "vs. \"both\" = PWO*ET"
+						},
+						{
+							"text": "both",
+							"outline": "PWO*ET",
+							"note": "vs. \"boat\" = PWOET"
+						},
+						{
+							"text": "safe",
+							"outline": "SAEUF",
+							"note": "vs. \"save\" = SA*EUF"
+						},
+						{
+							"text": "save",
+							"outline": "SA*EUF",
+							"note": "vs. \"safe\" = SAEUF"
+						},
+						{
+							"text": "quite",
+							"outline": "KWAOEUT",
+							"note": "vs. \"quiet\" = KWAO*EUT"
+						},
+						{
+							"text": "quiet",
+							"outline": "KWAO*EUT",
+							"note": "vs. \"quite\" = KWAOEUT"
+						}
+					],
+					"passAccuracy": 0.9
+				},
+				{
+					"id": "numbers-punctuation",
+					"title": "Numbers & punctuation",
+					"chapter": "Lapwing guide: numbers; punctuation",
+					"intro": [
+						"The number bar (#) turns letter keys into digits: #S = 1, #T- = 2, #P- = 3, #H = 4, #A = 5, #O = 0, #-F = 6, #-P = 7, #-L = 8, #-T = 9.",
+						"Punctuation gets its own strokes: TP-PL = period · KW-BG = comma · H-F = question mark · TP-BG = exclamation · KPA = capitalize next word."
+					],
+					"items": [
+						{
+							"text": "1",
+							"outline": "#S"
+						},
+						{
+							"text": "2",
+							"outline": "#T"
+						},
+						{
+							"text": "3",
+							"outline": "#P"
+						},
+						{
+							"text": "4",
+							"outline": "#H"
+						},
+						{
+							"text": "5",
+							"outline": "#A"
+						},
+						{
+							"text": "0",
+							"outline": "#O"
+						},
+						{
+							"text": "6",
+							"outline": "#-F"
+						},
+						{
+							"text": "7",
+							"outline": "#-P"
+						},
+						{
+							"text": "8",
+							"outline": "#-L"
+						},
+						{
+							"text": "9",
+							"outline": "#-T"
+						},
+						{
+							"text": "period .",
+							"outline": "TP-PL"
+						},
+						{
+							"text": "comma ,",
+							"outline": "KW-BG"
+						},
+						{
+							"text": "question mark ?",
+							"outline": "H-F"
+						},
+						{
+							"text": "exclamation !",
+							"outline": "TP-BG"
+						},
+						{
+							"text": "capitalize next",
+							"outline": "KPA"
+						}
+					],
+					"passAccuracy": 0.9
+				}
+			]
+		}
+	]
+}

@@ -1,44 +1,58 @@
 <script lang="ts">
-	import { lessons } from '$lib/lessons/lessons';
+	import { units, lessons } from '$lib/lessons/lessons';
 	import { progress } from '$lib/progress/progress.svelte';
+
+	const flatIndex = (id: string) => lessons.findIndex((l) => l.id === id);
 </script>
 
 <h1>Learn stenography, one chord at a time</h1>
 <p class="sub">
-	A progression through <strong>Lapwing theory</strong>. Each lesson unlocks the next once you pass
-	with 90% first-try accuracy — speed comes later, accuracy comes first.
+	The full <strong>Lapwing theory</strong> course — {lessons.length} lessons generated from the
+	official lapwing-base dictionary, following the
+	<a href="https://lapwing.aerick.ca" target="_blank" rel="noreferrer">Lapwing for Beginners</a>
+	guide. Each lesson unlocks the next at 90% first-try accuracy — accuracy before speed.
 </p>
 
-<ol class="lessons">
-	{#each lessons as lesson, i (lesson.id)}
-		{@const lp = progress.data.lessons[lesson.id]}
-		{@const unlocked = progress.isUnlocked(lesson.id)}
-		<li class:locked={!unlocked} class:completed={lp?.completed}>
-			<div class="status">
-				{#if lp?.completed}✅{:else if unlocked}▶️{:else}🔒{/if}
-			</div>
-			<div class="info">
-				{#if unlocked}
-					<a href="/lesson/{lesson.id}" class="title">{i + 1}. {lesson.title}</a>
-				{:else}
-					<span class="title">{i + 1}. {lesson.title}</span>
-				{/if}
-				<div class="meta">
-					{lesson.chapter} · {lesson.items.length} items
-					{#if lp}
-						· best {Math.round(lp.bestAccuracy * 100)}% · {lp.attempts}
-						{lp.attempts === 1 ? 'attempt' : 'attempts'}
-					{/if}
+{#each units as unit (unit.title)}
+	<h2>{unit.title}</h2>
+	<ol class="lessons">
+		{#each unit.lessons as lesson (lesson.id)}
+			{@const lp = progress.data.lessons[lesson.id]}
+			{@const unlocked = progress.isUnlocked(lesson.id)}
+			<li class:locked={!unlocked} class:completed={lp?.completed}>
+				<div class="status">
+					{#if lp?.completed}✅{:else if unlocked}▶️{:else}🔒{/if}
 				</div>
-			</div>
-		</li>
-	{/each}
-</ol>
+				<div class="info">
+					{#if unlocked}
+						<a href="/lesson/{lesson.id}" class="title">{flatIndex(lesson.id) + 1}. {lesson.title}</a>
+					{:else}
+						<span class="title">{flatIndex(lesson.id) + 1}. {lesson.title}</span>
+					{/if}
+					<div class="meta">
+						{lesson.chapter} · {lesson.items.length} items
+						{#if lp}
+							· best {Math.round(lp.bestAccuracy * 100)}% · {lp.attempts}
+							{lp.attempts === 1 ? 'attempt' : 'attempts'}
+						{/if}
+					</div>
+				</div>
+			</li>
+		{/each}
+	</ol>
+{/each}
 
 <style>
 	h1 {
 		font-size: 1.5rem;
 		margin-bottom: 0.25rem;
+	}
+	h2 {
+		font-size: 1rem;
+		color: #9aa1b5;
+		text-transform: uppercase;
+		letter-spacing: 0.06em;
+		margin: 1.5rem 0 0.5rem;
 	}
 	.sub {
 		color: #9aa1b5;
@@ -47,6 +61,7 @@
 	.lessons {
 		list-style: none;
 		padding: 0;
+		margin: 0;
 		display: flex;
 		flex-direction: column;
 		gap: 0.5rem;
