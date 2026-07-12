@@ -1,7 +1,7 @@
 import { browser } from '$app/environment';
 
 export interface AppSettings {
-	inputSource: 'keyboard' | 'plover';
+	inputSource: 'keyboard' | 'gemini' | 'plover';
 	ploverUrl: string;
 	storage: 'local' | 'sqlite';
 }

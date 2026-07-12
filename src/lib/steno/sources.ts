@@ -134,6 +134,156 @@ export class KeyboardStrokeSource implements StrokeSource {
 	}
 }
 
+/**
+ * Gemini PR packet layout (as used by The Uni, Javelin/QMK boards, and most
+ * hobbyist writers): 6 bytes per stroke, the first byte has its MSB set, and
+ * each byte's low 7 bits map to keys, bit 0x40 first. Mirrors Plover's chart.
+ */
+const GEMINI_KEY_CHART: (StenoKey | null)[][] = [
+	[null, '#', '#', '#', '#', '#', '#'], // Fn, #1–#6
+	['S-', 'S-', 'T-', 'K-', 'P-', 'W-', 'H-'], // S1, S2, T-, K-, P-, W-, H-
+	['R-', 'A-', 'O-', '*', '*', null, null], // R-, A, O, *1, *2, res, res
+	[null, '*', '*', '-E', '-U', '-F', '-R'], // pwr, *3, *4, E, U, -F, -R
+	['-P', '-B', '-L', '-G', '-T', '-S', '-D'],
+	['#', '#', '#', '#', '#', '#', '-Z'] // #7–#C, -Z
+];
+
+/** Decode one 6-byte Gemini PR packet into a stroke. */
+export function decodeGeminiPacket(packet: Uint8Array): Stroke {
+	const stroke: Stroke = new Set();
+	for (let i = 0; i < 6; i++) {
+		const byte = packet[i] ?? 0;
+		for (let j = 0; j < 7; j++) {
+			if (byte & (0x40 >> j)) {
+				const key = GEMINI_KEY_CHART[i][j];
+				if (key) stroke.add(key);
+			}
+		}
+	}
+	return stroke;
+}
+
+export type GeminiStatus =
+	| 'unsupported'
+	| 'needs-permission'
+	| 'connecting'
+	| 'open'
+	| 'closed'
+	| 'error';
+
+/**
+ * Reads strokes straight from a Gemini PR writer over the Web Serial API —
+ * no Plover needed. Chromium-only (Chrome/Edge); the first connection needs
+ * a user gesture to grant the port, after which it reconnects silently.
+ */
+export class GeminiSerialSource implements StrokeSource {
+	private port: SerialPort | null = null;
+	private reader: ReadableStreamDefaultReader<Uint8Array> | null = null;
+	private strokeListeners: StrokeListener[] = [];
+	private stopped = false;
+	onStatus: ((status: GeminiStatus) => void) | null = null;
+
+	static supported(): boolean {
+		return typeof navigator !== 'undefined' && 'serial' in navigator;
+	}
+
+	async start() {
+		this.stopped = false;
+		if (!GeminiSerialSource.supported()) {
+			this.onStatus?.('unsupported');
+			return;
+		}
+		const ports = await navigator.serial.getPorts();
+		if (ports.length === 0) {
+			this.onStatus?.('needs-permission');
+			return;
+		}
+		await this.connectTo(ports[0]);
+	}
+
+	/** Prompt for the port — must be called from a click handler. */
+	async requestPort() {
+		if (!GeminiSerialSource.supported()) {
+			this.onStatus?.('unsupported');
+			return;
+		}
+		try {
+			const port = await navigator.serial.requestPort();
+			await this.connectTo(port);
+		} catch {
+			// user dismissed the picker
+			this.onStatus?.('needs-permission');
+		}
+	}
+
+	private async connectTo(port: SerialPort) {
+		this.onStatus?.('connecting');
+		try {
+			await port.open({ baudRate: 9600 });
+		} catch {
+			this.onStatus?.('error');
+			return;
+		}
+		this.port = port;
+		this.onStatus?.('open');
+		void this.readLoop();
+	}
+
+	private async readLoop() {
+		let packet: number[] = [];
+		while (!this.stopped && this.port?.readable) {
+			this.reader = this.port.readable.getReader();
+			try {
+				for (;;) {
+					const { value, done } = await this.reader.read();
+					if (done) break;
+					for (const byte of value ?? []) {
+						if (byte & 0x80) {
+							packet = [byte]; // header byte starts (and is part of) a packet
+						} else if (packet.length > 0) {
+							packet.push(byte);
+						} // else: desynced mid-packet byte — wait for next header
+						if (packet.length === 6) {
+							const stroke = decodeGeminiPacket(Uint8Array.from(packet));
+							packet = [];
+							if (stroke.size > 0) for (const fn of this.strokeListeners) fn(stroke);
+						}
+					}
+				}
+			} catch {
+				// transient read error (e.g. cable unplugged); loop re-checks readable
+			} finally {
+				this.reader?.releaseLock();
+				this.reader = null;
+			}
+		}
+		if (!this.stopped) this.onStatus?.('closed');
+	}
+
+	stop() {
+		this.stopped = true;
+		const reader = this.reader;
+		const port = this.port;
+		this.port = null;
+		void (async () => {
+			try {
+				await reader?.cancel();
+			} catch {
+				// already released
+			}
+			try {
+				await port?.close();
+			} catch {
+				// already closed
+			}
+		})();
+	}
+
+	onStroke(fn: StrokeListener) {
+		this.strokeListeners.push(fn);
+	}
+}
+
 /** Normalize key names Plover plugins send (e.g. "S-", "A", "-B", "*"). */
 function ploverKeyToStenoKey(raw: string): StenoKey | null {
 	if (raw === '#' || raw.startsWith('#')) return '#';

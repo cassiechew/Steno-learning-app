@@ -3,8 +3,10 @@
 	import StenoKeyboard from '$lib/components/StenoKeyboard.svelte';
 	import { formatStroke, parseOutline, strokesEqual, type Stroke } from '$lib/steno/keys';
 	import {
+		GeminiSerialSource,
 		KeyboardStrokeSource,
 		PloverWebSocketSource,
+		type GeminiStatus,
 		type StrokeSource
 	} from '$lib/steno/sources';
 	import { loadSettings } from '$lib/settings';
@@ -26,7 +28,9 @@
 	let lastWrongNotation = $state('');
 	let flash = $state<'ok' | 'bad' | null>(null);
 	let ploverStatus = $state<'connecting' | 'open' | 'closed' | 'error' | null>(null);
-	let inputSource = $state<'keyboard' | 'plover'>('keyboard');
+	let geminiStatus = $state<GeminiStatus | null>(null);
+	let inputSource = $state<'keyboard' | 'gemini' | 'plover'>('keyboard');
+	let gemini = $state<GeminiSerialSource | null>(null);
 
 	let source: StrokeSource | null = null;
 	let flashTimer: ReturnType<typeof setTimeout> | null = null;
@@ -143,7 +147,12 @@
 	onMount(() => {
 		const settings = loadSettings();
 		inputSource = settings.inputSource;
-		if (settings.inputSource === 'plover') {
+		if (settings.inputSource === 'gemini') {
+			const g = new GeminiSerialSource();
+			g.onStatus = (s) => (geminiStatus = s);
+			gemini = g;
+			source = g;
+		} else if (settings.inputSource === 'plover') {
 			const plover = new PloverWebSocketSource(settings.ploverUrl);
 			plover.onStatus = (s) => (ploverStatus = s);
 			source = plover;
@@ -175,6 +184,18 @@
 			(Plover's qwerty layout). Press keys together, release together. Change in
 			<a href="/settings">settings</a>.
 		</p>
+	{:else if inputSource === 'gemini'}
+		<p class="note">
+			Input: <strong>steno writer (Gemini PR over USB)</strong>
+			{#if geminiStatus === 'open'}· connected ✅
+			{:else if geminiStatus === 'needs-permission'}· not connected — plug in your writer and
+				<button class="inline" onclick={() => gemini?.requestPort()}>connect it</button>
+			{:else if geminiStatus === 'unsupported'}· this browser has no Web Serial API — use
+				Chrome/Edge, or pick another input in <a href="/settings">settings</a>
+			{:else if geminiStatus === 'error'}· could not open the port ❌ — is Plover (or another
+				tab) holding it?
+			{:else}· {geminiStatus ?? 'starting'}…{/if}
+		</p>
 	{:else}
 		<p class="note">
 			Input: <strong>Plover WebSocket</strong>
@@ -184,6 +205,16 @@
 	{/if}
 	<button class="primary" onclick={start}>Start drill ({lesson.items.length} items)</button>
 {:else if phase === 'drill' && item}
+	{#if inputSource === 'gemini' && geminiStatus !== 'open'}
+		<p class="note banner">
+			Steno writer not connected —
+			{#if geminiStatus === 'needs-permission'}
+				<button class="inline" onclick={() => gemini?.requestPort()}>connect it</button>
+			{:else}
+				check the cable and that nothing else (like Plover) has the port.
+			{/if}
+		</p>
+	{/if}
 	<div class="drill" class:flash-ok={flash === 'ok'} class:flash-bad={flash === 'bad'}>
 		<div class="progressbar">
 			<div class="fill" style="width: {(itemIndex / lesson.items.length) * 100}%"></div>
@@ -269,6 +300,23 @@
 		color: #9aa1b5;
 		font-size: 0.9rem;
 		max-width: 44rem;
+	}
+	.note.banner {
+		background: #2b2436;
+		border: 1px solid #4a3d63;
+		border-radius: 0.5rem;
+		padding: 0.5rem 0.85rem;
+		margin-top: 1rem;
+	}
+	button.inline {
+		background: #4f8ff0;
+		color: #0d1520;
+		border: none;
+		border-radius: 0.35rem;
+		padding: 0.15rem 0.6rem;
+		font-size: 0.85rem;
+		font-weight: 600;
+		cursor: pointer;
 	}
 	.drill {
 		margin-top: 1.5rem;

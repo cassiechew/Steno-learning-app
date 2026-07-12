@@ -1,15 +1,33 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { loadSettings, saveSettings, type AppSettings } from '$lib/settings';
+	import { GeminiSerialSource } from '$lib/steno/sources';
 	import { progress } from '$lib/progress/progress.svelte';
 
 	let settings = $state<AppSettings>(loadSettings());
 	let ploverTest = $state<'idle' | 'testing' | 'ok' | 'fail'>('idle');
+	let geminiTest = $state<'idle' | 'unsupported' | 'ok' | 'fail'>('idle');
 	let storageMsg = $state('');
 
 	onMount(() => {
 		settings = loadSettings();
 	});
+
+	async function connectGemini() {
+		if (!GeminiSerialSource.supported()) {
+			geminiTest = 'unsupported';
+			return;
+		}
+		const source = new GeminiSerialSource();
+		source.onStatus = (s) => {
+			if (s === 'open') geminiTest = 'ok';
+			else if (s === 'error' || s === 'needs-permission') geminiTest = 'fail';
+		};
+		await source.requestPort();
+		// Close again so the lesson page can claim the port; the permission
+		// grant is what we were after and it persists.
+		source.stop();
+	}
 
 	function persist() {
 		saveSettings($state.snapshot(settings));
@@ -86,6 +104,34 @@
 		<input
 			type="radio"
 			name="input"
+			checked={settings.inputSource === 'gemini'}
+			onchange={() => {
+				settings.inputSource = 'gemini';
+				persist();
+			}}
+		/>
+		<span>
+			<strong>Steno writer (Gemini PR over USB)</strong> — plug in The Uni or any Gemini PR
+			machine and the app reads strokes straight off the serial port. No Plover needed.
+			Chrome/Edge only (uses the Web Serial API); the keyboard must be in Gemini PR mode, and
+			Plover must be closed (it would hold the port).
+		</span>
+	</label>
+	{#if settings.inputSource === 'gemini'}
+		<div class="plover-config">
+			<button onclick={connectGemini}>Connect keyboard</button>
+			{#if geminiTest === 'ok'}<span class="ok">Connected ✅ — the drill pages will now find it automatically</span>{/if}
+			{#if geminiTest === 'fail'}<span class="fail">No port selected / could not open ❌</span>{/if}
+			{#if geminiTest === 'unsupported'}<span class="fail">
+					This browser has no Web Serial API — use Chrome or Edge, or switch to the Plover
+					WebSocket option.
+				</span>{/if}
+		</div>
+	{/if}
+	<label>
+		<input
+			type="radio"
+			name="input"
 			checked={settings.inputSource === 'plover'}
 			onchange={() => {
 				settings.inputSource = 'plover';
@@ -94,8 +140,9 @@
 		/>
 		<span>
 			<strong>Plover (WebSocket)</strong> — real strokes from Plover via the
-			<code>plover-websocket-server</code> plugin. Use this if you have a steno machine or want
-			Plover's own key handling. Enable the plugin in Plover, then set the URL below.
+			<code>plover-websocket-server</code> plugin. Use this if you want Plover running at the
+			same time (its key handling, dictionaries, etc.). Enable the plugin in Plover, then set
+			the URL below.
 		</span>
 	</label>
 	{#if settings.inputSource === 'plover'}

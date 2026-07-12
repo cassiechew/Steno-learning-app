@@ -28,16 +28,21 @@ were wrong, missing, or extra.
 
 ## Stroke input
 
-Two sources, switchable in **Settings**:
+Three sources, switchable in **Settings**:
 
 1. **Keyboard as steno machine** (default, zero setup) — the app captures chords
    directly from your keyboard using Plover's qwerty layout (`Q`/`A` = `S-`,
    `W` = `T-`, `C` = `A`, …). Keys accumulate while held and the stroke registers
    when all are released, exactly like a real machine. Needs a keyboard with decent
    key rollover (most mechanical keyboards are fine).
-2. **Plover via WebSocket** — real strokes from Plover using the
+2. **Steno writer over USB (Gemini PR)** — plug in The Uni or any hobbyist writer
+   in Gemini PR mode and the app reads strokes straight off the serial port via
+   the Web Serial API. No Plover required. Chrome/Edge only; close Plover first
+   (it would hold the port). The first connection asks you to pick the port; the
+   grant persists after that.
+3. **Plover via WebSocket** — real strokes from Plover using the
    `plover-websocket-server` plugin (default `ws://localhost:8086/websocket`).
-   Use this with a steno machine or hobbyist board.
+   Use this if you want Plover running at the same time.
 
 ## Progress storage
 
@@ -63,7 +68,8 @@ npm run build:curriculum  # regenerate src/lib/lessons/curriculum.json from the 
 ## Project layout
 
 - `src/lib/steno/keys.ts` — steno key model, RTF/CRE outline parsing/formatting
-- `src/lib/steno/sources.ts` — keyboard chord capture + Plover WebSocket source
+- `src/lib/steno/sources.ts` — keyboard chord capture, Gemini PR serial decoding
+  (Web Serial), and the Plover WebSocket source
 - `scripts/build-curriculum.mjs` — generates the curriculum from the dictionary:
   each lesson has a "chord vocabulary" (the chords taught so far), and a word
   qualifies only if its outline decomposes into taught chords, uses the lesson's

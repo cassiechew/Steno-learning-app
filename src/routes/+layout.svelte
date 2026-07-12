@@ -28,7 +28,7 @@
 	</main>
 	<footer>
 		Based on the <a href="https://lapwing.aerick.ca" target="_blank" rel="noreferrer">Lapwing for Beginners</a> guide ·
-		works standalone (qwerty-as-steno) or with
+		works standalone (qwerty-as-steno), with a Gemini PR writer over USB, or with
 		<a href="https://www.openstenoproject.org/plover/" target="_blank" rel="noreferrer">Plover</a>
 	</footer>
 </div>
